@@ -169,7 +169,7 @@ button {
         }
         .view {
             height: 238px;
-            width: 100%;
+            max-width: 100%;
             background-color: gray;
             margin: 10px 0;
         }
@@ -208,37 +208,53 @@ button {
 .price-list {
     background-color: #B0C5ED;
     margin-bottom: 30px;
-    h2{
-        text-align: center;
-        text-decoration: underline;
-        font-weight: 400;
-    }
-    .list1 {
-        display: flex;
-        justify-content: center;
-    }
-    .list {
-        display: flex;
-        justify-content: space-between;
-        margin: 10px 10px 10px 25px;
-        font-size: 0.8rem;
-        width: 340px;
-        ul {
-            padding: 0;
-        }
-        .prices {
-            text-align: right;
-            ul {
-                list-style-type: none;
+    .price-list1 {
+        .price-list2 {
+            margin-right: 10px;
+            h2{
+                text-align: center;
+                text-decoration: underline;
+                font-weight: 400;
+            }
+            .list1 {
+                display: flex;
+                justify-content: center;
+            }
+            .list {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0px 10px 25px;
+                font-size: 0.8rem;
+                width: 340px;
+                ul {
+                    padding: 0;
+                }
+                .prices {
+                    text-align: right;
+                    ul {
+                        list-style-type: none;
+                    }
+                }
+            }
+            p {
+                text-align: center;
+                font-size: 0.9rem;
+                font-family: 'Open Sans', sans-serif;
             }
         }
-    }
-    p {
-        text-align: center;
-        font-size: 0.9rem;
-        font-family: 'Open Sans', sans-serif;
+    } 
+    .hot-scissors {
+        border-left: 2px solid black;
+        display: none;
+        width: 50%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
+
+
 
 .gallery {
     margin: 10px;
@@ -366,11 +382,14 @@ button {
             }
         }
     }
-
     .price-list {
-        .list {
-            font-size: 1.2rem;
-            width: 500px;
+        .price-list1 {
+            .price-list2 {
+                .list {
+                    font-size: 1.2rem;
+                    width: 500px;
+                }
+            }
         }
     }
 }
@@ -510,6 +529,28 @@ button {
                     font-size: 24px;
                 }
             }
+        }
+    }
+    .price-list {
+        display: flex;
+        .price-list1 {
+            display: flex;
+            align-items: center;
+            width: 50%;
+            .price-list2 {
+                width: 100%;
+                h2 {
+                    text-align: right;
+                }
+                .list {
+                    justify-content: space-between;
+                    width: 100%;
+                    max-width: 720px;
+                }
+            }
+        }
+        .hot-scissors {
+            display: block;
         }
     }
 }
