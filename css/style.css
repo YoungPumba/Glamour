@@ -252,22 +252,32 @@ button a {
 .gallery__text p {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
+  margin-bottom: 10px;
 }
 .gallery a {
-  margin: 10px 0 20px;
+  margin: 20px 0 10px;
   cursor: pointer;
 }
 .gallery a p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
 }
-.gallery__img {
+.gallery__scroll-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.gallery__scroll-img .gallery__img {
   height: 240px;
   width: 240px;
+  margin: 15px;
   box-shadow: -10px 10px 0px 0px rgb(176, 197, 238);
   border: #000 solid 3px;
 }
-.gallery__img img {
+.gallery__scroll-img .gallery__img img {
   height: 100%;
 }
 
@@ -481,6 +491,9 @@ button a {
   .contact__desktop .adress p {
     text-align: left;
     font-size: 24px;
+  }
+  .services {
+    margin: 20px 0;
   }
   .price-list {
     display: flex;

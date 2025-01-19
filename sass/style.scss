@@ -266,10 +266,11 @@ button {
         p {
             font-family: 'Open Sans', sans-serif;
             font-style: italic;
+            margin-bottom: 10px;
         }
     }
     a {
-        margin: 10px 0 20px;
+        margin: 20px 0 10px;
         cursor: pointer;
         p {
             font-family: 'Open Sans', sans-serif; 
@@ -277,13 +278,23 @@ button {
         }
     }
 
-    &__img {
-        height: 240px;
-        width: 240px;
-        box-shadow: -10px 10px 0px 0px rgba(176, 197, 238, 1);
-        border: #000 solid 3px;
-        img {
-            height: 100%;
+    &__scroll-img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+        .gallery__img {
+            height: 240px;
+            width: 240px;
+            margin: 15px;
+            box-shadow: -10px 10px 0px 0px rgba(176, 197, 238, 1);
+            border: #000 solid 3px;
+            img {
+                height: 100%;
+            }
         }
     }
 }
@@ -530,6 +541,9 @@ button {
                 }
             }
         }
+    }
+    .services {
+        margin: 20px 0;
     }
     .price-list {
         display: flex;
