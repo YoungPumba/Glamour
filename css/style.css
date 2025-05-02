@@ -26,6 +26,10 @@ p {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.background {
+  background-color: #B0C5EE;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -96,6 +100,7 @@ button a {
 .local {
   margin: 10px 10px;
   font-weight: 500;
+  justify-content: center;
 }
 .local h1 {
   font-size: 24px;
@@ -121,6 +126,22 @@ button a {
 }
 .local__desktop {
   display: none;
+}
+
+.news {
+  text-align: center;
+}
+.news__container {
+  justify-content: space-around;
+}
+.news__container__item {
+  margin: 10px;
+}
+.news__container__item p {
+  margin-bottom: 5px;
+}
+.news__container__item img {
+  max-width: 150px;
 }
 
 .contact {
@@ -186,12 +207,19 @@ button a {
   width: 90%;
   max-width: 335px;
   margin: 20px 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 .services .service h4 {
   text-decoration: underline;
 }
 .services .service img {
   width: 130px;
+}
+.services .service:hover {
+  background-color: rgba(176, 197, 237, 0.3960784314);
+  border: 2px solid black;
+  box-shadow: inset 0px 10px 10px -4px rgb(66, 68, 90);
 }
 
 .price-list {
@@ -241,10 +269,34 @@ button a {
   height: 100%;
 }
 
+.treatment {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 70%;
+  transform: translateX(-50%);
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 16px;
+  white-space: normal;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
 .gallery {
   margin: 10px;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 .gallery__text {
   text-align: left;
@@ -262,29 +314,44 @@ button a {
   font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
 }
-.gallery__scroll-img {
-  position: relative;
+.gallery__scroll {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  overflow: hidden;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #B0C5ED white;
 }
-.gallery__scroll-img .gallery__img {
+.gallery__scroll__item {
   height: 240px;
   width: 240px;
   margin: 15px;
   box-shadow: -10px 10px 0px 0px rgb(176, 197, 238);
   border: #000 solid 3px;
 }
-.gallery__scroll-img .gallery__img img {
+.gallery__scroll__item__img {
+  height: 235px;
+  width: 235px;
+}
+.gallery__scroll__item__img img {
+  width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.opening-hours-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .opening-hours {
-  background-color: #B0C5ED;
-  margin: 20px 0;
   padding-bottom: 5px;
+  max-width: 310px;
 }
 .opening-hours h2 {
   text-align: center;
@@ -313,6 +380,16 @@ button a {
   text-align: right;
 }
 
+.op-contact {
+  position: absolute;
+  text-align: center;
+  left: 66vw;
+  visibility: hidden;
+}
+.op-contact .f18 {
+  font-size: 18px;
+}
+
 .brands {
   display: flex;
   justify-content: space-around;
@@ -325,30 +402,37 @@ button a {
   margin: 10px;
 }
 
-.footer {
+.footer-mobile {
   background-color: #B0C5ED;
   flex-direction: column;
 }
-.footer__img img {
+.footer-mobile .footer__img {
+  width: 100%;
+}
+.footer-mobile .footer__img img {
   max-width: 274px;
   height: 100%;
 }
-.footer .salon {
+.footer-mobile .salon {
   justify-content: center;
   display: flex;
   flex-direction: row;
   font-family: "Open Sans", sans-serif;
 }
-.footer .salon img {
+.footer-mobile .salon img {
   max-height: 20px;
   margin: 0 5px;
+}
+
+.footer-desktop {
+  display: none;
 }
 
 .nav-desktop {
   display: none;
 }
 
-.background {
+.background-text {
   display: none;
 }
 
@@ -392,7 +476,7 @@ button a {
   .nav-desktop ul img {
     max-width: 250px;
   }
-  .background {
+  .background-text {
     display: flex;
     height: 317px;
     width: 100%;
@@ -402,7 +486,7 @@ button a {
     background-image: linear-gradient(rgba(176, 196, 237, 0.59), rgba(176, 196, 237, 0.59)), url(../assets/background.jpg);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
-  .background p {
+  .background-text p {
     margin-top: 100px;
     align-items: center;
     font-family: "Italianno", cursive;
@@ -516,6 +600,59 @@ button a {
   }
   .price-list .hot-scissors {
     display: block;
+  }
+  .opening-hours__list {
+    margin: 0;
+  }
+  .op-contact {
+    visibility: visible;
+  }
+  .footer-mobile {
+    display: none;
+  }
+  .footer-desktop {
+    display: flex;
+    background-color: #B0C5ED;
+    height: 200px;
+  }
+  .footer-desktop__left {
+    display: flex;
+    align-items: center;
+  }
+  .footer-desktop__left .salon-desktop {
+    text-align: right;
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+    font-family: "Open Sans", sans-serif;
+  }
+  .footer-desktop__left .salon-desktop img {
+    max-height: 20px;
+    margin: 0 5px;
+  }
+  .footer-desktop__right {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  .footer-desktop__right img {
+    max-height: 20px;
+    margin: 0 5px;
+  }
+  .footer-desktop__right__open-hours {
+    display: flex;
+  }
+  .footer-desktop__right__open-hours .days {
+    text-align: left;
+  }
+  .footer-desktop__right__open-hours .days ul li {
+    list-style-type: none;
+  }
+  .footer-desktop__right__open-hours .hours {
+    text-align: right;
+  }
+  .footer-desktop__right__open-hours .hours ul li {
+    list-style-type: none;
   }
 }
 @media (min-width: 1200px) {

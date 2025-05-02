@@ -16,238 +16,292 @@
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body class="wrapper">
+<body>
     <header>
         <nav>
-            <div class="logo-mobile">
+            <div class="logo-mobile wrapper">
                 <img src="./assets/Glamour_black.svg" alt="">
             </div>
             <div class="nav-mobile">
                 <div class="nav-mobile__container">
-                    <h2><a href="">O NAS</a></h2>
-                    <h2><a href="">GALERIA</a></h2>
+                    <h2><a href="./pages/o_mnie.html">O MNIE</a></h2>
+                    <h2><a href="./pages/galeria.html">GALERIA</a></h2>
                     <h2><a href="#cennik">CENNIK</a></h2>
-                    <h2><a href="https://drive.google.com/file/d/1cEwT-dfKKtNRsPVAUVBuZjeoVXdT4Gwz/view?usp=sharing">REGULAMIN</a></h2>
+                    <h2><a href="./pdffile/Regulamin salonu fryzjerskiego.pdf" target="_blank">REGULAMIN</a></h2>
                 </div>
-                <p>Fachowców jest tylko garstka.</p>
+                <p>Kocham to co robię</p>
             </div>
             <div class="nav-desktop">
-                <ul>
-                    <li><a href=""><img src="./assets/Glamour_black.svg" alt="logo"></a></li>
-                    <li><h2><a href="">O NAS</a></h2></li>
-                    <li><h2><a href="">GALERIA</a></h2></li>
+                <ul class="wrapper">
+                    <li><a href="Glamour_home.html"><img src="./assets/Glamour_black.svg" alt="logo"></a></li>
+                    <li><h2><a href="./pages/o_mnie.html">O MNIE</a></h2></li>
+                    <li><h2><a href="./pages/galeria.html">GALERIA</a></h2></li>
                     <li><h2><a href="#cennik">CENNIK</a></h2></li>
-                    <li><h2><a href="https://drive.google.com/file/d/1cEwT-dfKKtNRsPVAUVBuZjeoVXdT4Gwz/view?usp=sharing">REGULAMIN</a></h2></li>
+                    <li><h2><a href="./pdffile/Regulamin salonu fryzjerskiego.pdf" target="_blank">REGULAMIN</a></h2></li>
                 </ul>
             </div>
         </nav>
 
-        <div class="background container">
-            <p>Fachowców jest tylko garstka.</p>
+        <div class="background-text container">
+            <p>Kocham to co robię</p>
         </div>
     </header>
 
-    <section class="local container">
-        <div class="local__desktop">
-            <img src="./assets//2(2).png" alt="">
+    <section class="wrapper">
+        <div class="local container">
+            <div class="local__desktop">
+                <img src="./assets//2(2).png" alt="">
+            </div>
+            <div class="local__mobile">
+                <h1>Twój lokalny fryzjer</h1>
+                <p>Salon fryzjerski “Glamour” Joanna Mokicka</p>
+            <div class="local__content">
+                <img src="./assets/glowne.png" alt="Zdjęcie profilowe">
+                <p>Mieści się w miłej miejscowości Dobrzyniewo Duże. Tutaj każdy mieszkaniec gminy może skorzystać z lokalnych usług, oszczędzając przy tym czas i korzystając z domowej atmosfery. Umawianie dogodnego terminu wizyty odbywa się telefonicznie. Szeroki wybór usług zapewni każdej osobie satysfakcję.</p>
+            </div>
+            <div class="local__but container">
+                <button class="shadow"><a href="./pages/o_mnie.html">Więcej informacji</a></button>
+            </div>
+            </div>
         </div>
-        <div class="local__mobile">
-            <h1>Twój lokalny fryzjer</h1>
-            <p>Salon fryzjerski “Glamour” Joanna Mokicka</p>
-        <div class="local__content">
-            <img src="./assets/glowne.png" alt="Zdjęcie profilowe">
-            <p>Mieści się w miłej miejscowości Dobrzyniewo Duże. Tutaj każdy mieszkaniec gminy może skorzystać z lokalnych usług, oszczędzając przy tym czas i korzystając z domowej atmosfery. Umawianie dogodnego terminu wizyty odbywa się telefonicznie. Szeroki wybór usług zapewni każdej osobie satysfakcję.</p>
-        </div>
-        <div class="local__but container">
-            <button class="shadow"><a href="">Więcej informacji</a></button>
-        </div>
+        
+        <div class="news">
+           <h2>Aktualności:</h2> 
+           <div class="news__container container">
+            <div class="news__container__item">
+                <h3>02.05.2025</h3>
+                <p>Majóweczka</p>
+                <img src="./assets/closed.png" alt="">
+            </div>
+                <div class="news__container__item">
+                    <h3>05.05.2025</h3>
+                    <p>Wszystko po staremu</p>
+                    <img src="./assets/open.png" alt="">
+                </div>
+           </div>
         </div>
     </section>
 
-    <section class="contact shadow container" id="kontakt"> 
-        <div class="contact__mobile">
-            <h3>Kontakt</h3>
-            <div class="tel0 container">
-                <div class="tel">
-                    <img src="./assets/11.png" alt="telefon">
-                    <p>+48 533 445 455</p>
-                </div>
-            </div>
-            <p class="p-mobile">Umawianie wizyt telefoniecznie lub osobiście w salonie: <strong>Dobrzyniewo Duże Ul. Kościelna 19</strong></p>
-            <p class="p-desktop">Umawianie wizyt telefoniecznie lub osobiście w salonie</p>
-            <div class="view">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.1216604479964!2d23.027598177061133!3d53.19773428583215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471fe35f92fdf689%3A0x521330acc20a9b61!2sSalon%20Fryzjerski%20Glamour!5e0!3m2!1spl!2spl!4v1710256414502!5m2!1spl!2spl" width="100%" height="238" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="social">
-                <div class="insta">
-                    <a href=""><img src="./assets/insta.svg" alt="Instagram"></a>
-                </div>
-                <div class="fb">
-                    <a href=""><img src="./assets/fb.png" alt="Facebook"></a>
-                </div>
-                <div class="maps">
-                    <a href=""><img src="./assets/google-maps.png" alt="Google Maps"></a>
-                </div>
-            </div>
-        </div>
-        <div class="contact__desktop">
-            <div class="map992">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.1216604479964!2d23.027598177061133!3d53.19773428583215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471fe35f92fdf689%3A0x521330acc20a9b61!2sSalon%20Fryzjerski%20Glamour!5e0!3m2!1spl!2spl!4v1710256414502!5m2!1spl!2spl" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="map1200">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.1216604479964!2d23.027598177061133!3d53.19773428583215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471fe35f92fdf689%3A0x521330acc20a9b61!2sSalon%20Fryzjerski%20Glamour!5e0!3m2!1spl!2spl!4v1710256414502!5m2!1spl!2spl" width="850" height="365" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="adress">
-                <img src="" alt="">
-                <p>Dobrzyniewo Duże <br>ul. Kościelna 19</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="services container">
-        <div class="service">
-            <img src="./assets/13.png" alt="Nożyczki">
-            <h4>Komfortowe Strzyżenie</h4>
-            <p>Zapewniamy nie tylko doskonałe strzyżenie, ale także pełną wygodę. Nasze doświadczenie i precyzja artystyczna sprawiają, że każde cięcie jest wyjątkowe i dopasowane do Twojego stylu.</p>
-        </div>
-        <div class="service">
-            <img src="./assets/15.png" alt="Fryzura">
-            <h4>Piękne Fryzury</h4>
-            <p>W naszym salonie fryzjerskim tworzymy unikatowe upięcia, doskonałe na eleganckie przyjęcia i codzienne stylizacje, podkreślając indywidualny charakter każdej osoby.</p>
-        </div>
-        <div class="service">
-            <img src="./assets/14.png" alt="Koloryzacja">
-            <h4>Koloryzacja</h4>
-            <p>Oferujemy sztukę koloryzacji, od subtelnych pasemek po odważne ombre, aby dostarczyć naszym klientom nowe doznania w zakresie kreatywności i stylu.</p>
-        </div>
-        <div class="service">
-            <img src="./assets/16.png" alt="Narzędzia">
-            <h4>Nowoczesne Narzędzia</h4>
-            <p>W naszym salonie wykorzystujemy najnowocześniejsze maszyny i narzędzia, aby zapewnić perfekcyjne rezultaty i najwyższą satysfakcję klientów.</p>
-        </div>
-    </section>
-
-    <section class="price-list shadow" id="cennik">
-        <div class="price-list1">
-            <div class="price-list2">
-                <h2>Cennik</h2>
-                <div class="list1">
-                    <div class="list">
-                        <div class="treatments">
-                            <ul>
-                                <li>STRZYŻENIE DAMSKIE</li>
-                                <li>STRZYŻENIE NOŻYCZKAMI NA GORĄCO</li>
-                                <li>MYCIE WŁOSÓW</li>
-                                <li>MODELOWANIE</li>
-                                <li>KOLORYZACJA ODROSTÓW</li>
-                                <li>TONOWANIE</li>
-                                <li>PASEMKA</li>
-                                <li>BALEJAŻ</li>
-                                <li>BOTOKS</li>
-                                <li>NANOPLASTIA</li>
-                                <li>KERATYNOWE PROSTOWANIE</li>
-                                <li>TRWAŁA</li>
-                                <li>UPIĘCIE</li>
-                                <li>FALE</li>
-                                <li>STRZYŻENIE MĘSKIE</li>
-                                <li>BRODA</li>
-                                <li>RETUSZ SIWYCH WŁOSÓW</li>
-                                <li>STRZYŻENIE DZIECIĘCE</li>
-                                <li>SAUNA</li>
-                                <li>REGENERACJA</li>
-                            </ul>
-                        </div>
-                        <div class="prices">
-                            <ul>
-                                <li>45-60 ZŁ</li>
-                                <li>90 ZŁ</li>
-                                <li>10 ZŁ</li>
-                                <li>50-100 ZŁ</li>
-                                <li>100-150 ZŁ</li>
-                                <li>100-150 ZŁ</li>
-                                <li>120-200 ZŁ</li>
-                                <li>120-200 ZŁ</li>
-                                <li>150-180 ZŁ</li>
-                                <li>350-750 ZŁ</li>
-                                <li>250-500 ZŁ</li>
-                                <li>150-300 ZŁ</li>
-                                <li>150-250 ZŁ</li>
-                                <li>120 ZŁ</li>
-                                <li>35-60 ZŁ</li>
-                                <li>35 ZŁ</li>
-                                <li>50 ZŁ</li>
-                                <li>35 ZŁ</li>
-                                <li>50 ZŁ</li>
-                                <li>100-200 ZŁ</li>
-                            </ul>
-                        </div>
+    <section class="background shadow" id="kontakt"> 
+        <div class="contact wrapper container">
+            <div class="contact__mobile">
+                <h3>Kontakt</h3>
+                <div class="tel0 container">
+                    <div class="tel">
+                        <img src="./assets/11.png" alt="telefon">
+                        <p>+48 533 445 455</p>
                     </div>
                 </div>
-                <p>Cena jest zależna od <b>długości</b> i <b>gęstości</b> włosów!</p>
-            </div> 
+                <p class="p-mobile">Umawianie wizyt telefoniecznie lub osobiście w salonie: <strong>Dobrzyniewo Duże Ul. Kościelna 19</strong></p>
+                <p class="p-desktop">Umawianie wizyt telefoniecznie lub osobiście w salonie</p>
+                <div class="view">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.1216604479964!2d23.027598177061133!3d53.19773428583215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471fe35f92fdf689%3A0x521330acc20a9b61!2sSalon%20Fryzjerski%20Glamour!5e0!3m2!1spl!2spl!4v1710256414502!5m2!1spl!2spl" width="100%" height="238" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="social">
+                    <div class="insta">
+                        <a href="https://www.instagram.com/joanna.glamour/"><img src="./assets/insta.svg" alt="Instagram"></a>
+                    </div>
+                    <div class="fb">
+                        <a href="https://www.facebook.com/profile.php?id=100057326414839&locale=pl_PL"><img src="./assets/fb.png" alt="Facebook"></a>
+                    </div>
+                    <div class="maps">
+                        <a href="https://www.google.com/maps/place/Salon+Fryzjerski+Glamour/@53.197731,23.030173,1043m/data=!3m1!1e3!4m6!3m5!1s0x471fe35f92fdf689:0x521330acc20a9b61!8m2!3d53.1977311!4d23.0301731!16s%2Fg%2F11frj_6s4_?hl=pl&entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D"><img src="./assets/google-maps.png" alt="Google Maps"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__desktop">
+                <div class="map992">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.1216604479964!2d23.027598177061133!3d53.19773428583215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471fe35f92fdf689%3A0x521330acc20a9b61!2sSalon%20Fryzjerski%20Glamour!5e0!3m2!1spl!2spl!4v1710256414502!5m2!1spl!2spl" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map1200">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.1216604479964!2d23.027598177061133!3d53.19773428583215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471fe35f92fdf689%3A0x521330acc20a9b61!2sSalon%20Fryzjerski%20Glamour!5e0!3m2!1spl!2spl!4v1710256414502!5m2!1spl!2spl" width="850" height="365" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="adress">
+                    <img src="" alt="">
+                    <p>Dobrzyniewo Duże <br>ul. Kościelna 19</p>
+                </div>
+            </div>
         </div>
-        <div class="hot-scissors">
-            <img src="./assets/banner.png" alt="">
-        </div>  
+    </section>
+
+    <section class="wrapper">
+        <div class="services container">
+            <div class="service">
+                <img src="./assets/13.png" alt="Nożyczki">
+                <h4>Komfortowe Strzyżenie</h4>
+                <p>Zapewniamy nie tylko doskonałe strzyżenie, ale także pełną wygodę. Nasze doświadczenie i precyzja artystyczna sprawiają, że każde cięcie jest wyjątkowe i dopasowane do Twojego stylu.</p>
+            </div>
+            <div class="service">
+                <img src="./assets/15.png" alt="Fryzura">
+                <h4>Piękne Fryzury</h4>
+                <p>W naszym salonie fryzjerskim tworzymy unikatowe upięcia, doskonałe na eleganckie przyjęcia i codzienne stylizacje, podkreślając indywidualny charakter każdej osoby.</p>
+            </div>
+            <div class="service">
+                <img src="./assets/14.png" alt="Koloryzacja">
+                <h4>Koloryzacja</h4>
+                <p>Oferujemy sztukę koloryzacji, od subtelnych pasemek po odważne ombre, aby dostarczyć naszym klientom nowe doznania w zakresie kreatywności i stylu.</p>
+            </div>
+            <div class="service">
+                <img src="./assets/16.png" alt="Narzędzia">
+                <h4>Nowoczesne Narzędzia</h4>
+                <p>W naszym salonie wykorzystujemy najnowocześniejsze maszyny i narzędzia, aby zapewnić perfekcyjne rezultaty i najwyższą satysfakcję klientów.</p>
+            </div>
+        </div>   
+    </section>
+
+    <section class="background shadow" id="cennik">
+        <div class="price-list wrapper">
+            <div class="price-list1">
+                <div class="price-list2">
+                    <h2>Cennik</h2>
+                    <div class="list1">
+                        <div class="list">
+                            <div class="treatments">
+                                <ul>
+                                    <li class="treatment">STRZYŻENIE DAMSKIE</li>
+                                    <li class="treatment">STRZYŻENIE NOŻYCZKAMI NA GORĄCO</li>
+                                    <li class="treatment">MYCIE WŁOSÓW</li>
+                                    <li class="treatment">MODELOWANIE</li>
+                                    <li class="treatment">KOLORYZACJA ODROSTÓW</li>
+                                    <li class="treatment">TONOWANIE</li>
+                                    <li class="treatment">PASEMKA</li>
+                                    <li class="treatment">BALEJAŻ</li>
+                                    <li class="treatment">BOTOKS</li>
+                                    <li class="treatment">NANOPLASTIA</li>
+                                    <li class="treatment">KERATYNOWE PROSTOWANIE</li>
+                                    <li class="treatment">TRWAŁA</li>
+                                    <li class="treatment">UPIĘCIE</li>
+                                    <li class="treatment">FALE</li>
+                                    <li class="treatment">STRZYŻENIE MĘSKIE</li>
+                                    <li class="treatment">BRODA</li>
+                                    <li class="treatment">RETUSZ SIWYCH WŁOSÓW</li>
+                                    <li class="treatment">STRZYŻENIE DZIECIĘCE</li>
+                                    <li class="treatment">SAUNA</li>
+                                    <li class="treatment">REGENERACJA</li>
+                                </ul>
+                            </div>
+                            <div class="prices">
+                                <ul>
+                                    <li>45-60 ZŁ</li>
+                                    <li>90 ZŁ</li>
+                                    <li>15 ZŁ</li>
+                                    <li>60-110 ZŁ</li>
+                                    <li>100-150 ZŁ</li>
+                                    <li>100-150 ZŁ</li>
+                                    <li>120-200 ZŁ</li>
+                                    <li>120-200 ZŁ</li>
+                                    <li>150-180 ZŁ</li>
+                                    <li>350-750 ZŁ</li>
+                                    <li>250-500 ZŁ</li>
+                                    <li>150-300 ZŁ</li>
+                                    <li>160-260 ZŁ</li>
+                                    <li>120 ZŁ</li>
+                                    <li>35-60 ZŁ</li>
+                                    <li>35 ZŁ</li>
+                                    <li>50 ZŁ</li>
+                                    <li>35 ZŁ</li>
+                                    <li>110-160 ZŁ</li>
+                                    <li>100-200 ZŁ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Cena jest zależna od <b>długości</b> i <b>gęstości</b> włosów!</p>
+                </div> 
+            </div>
+            <div class="hot-scissors">
+                <img src="./assets/banner.png" alt="">
+            </div>  
+        </div>   
     </section>
 
     <section class="gallery container">
         <div class="gallery__text">
             <p>“W 2023 roku miałam możliwość skorzystać z wspaniałych kursów o różnych tematach fryzjerskich, które podniosły moje dotychczasowe kwalifikacje. Każdy taki kurs jest zakończony certyfikatem.”</p>
         </div>
-        <div class="gallery__scroll-img">
-            <div class="gallery__img">
-                <img src="./assets/Obraz (58).jpg" alt="Certyfikat">
+        <div class="gallery__scroll">
+            <div class="gallery__scroll__item">
+                <div class="gallery__scroll__item__img">
+                    <img src="./assets/Obraz (58).jpg" alt="Certyfikat">
+                </div>  
             </div>
-            <div class="gallery__img">
-                <img src="./assets/Obraz (58).jpg" alt="Certyfikat">
+            <div class="gallery__scroll__item">
+                <div class="gallery__scroll__item__img">
+                    <img src="./assets/manekin2.jpg" alt="Manekin">
+                </div>
             </div>
-            <div class="gallery__img">
-                <img src="./assets/Obraz (58).jpg" alt="Certyfikat">
+            <div class="gallery__scroll__item">
+                <div class="gallery__scroll__item__img">
+                    <img src="./assets/galeria3.PNG" alt="Sesja zdjęciowa">
+                </div>
             </div>
-            <div class="gallery__img">
-                <img src="./assets/Obraz (58).jpg" alt="Certyfikat">
+            <div class="gallery__scroll__item">
+                <div class="gallery__scroll__item__img">
+                    <img src="./assets/galeria2.png" alt="Strzyżenie">
+                </div>
             </div>
-            <div class="gallery__img">
-                <img src="./assets/Obraz (58).jpg" alt="Certyfikat">
+            <div class="gallery__scroll__item">
+                <div class="gallery__scroll__item__img">
+                    <img src="./assets/97.jpg" alt="Fryzura">
+                </div>
             </div>
-            <div class="gallery__img">
-                <img src="./assets/Obraz (58).jpg" alt="Certyfikat">
+            <div class="gallery__scroll__item">
+                <div class="gallery__scroll__item__img">
+                    <img src="./assets/Obraz (55).jpg" alt="Certyfikat">
+                </div>
+            </div>
+            <div class="gallery__scroll__item">
+                <div class="gallery__scroll__item__img">
+                    <img src="./assets/85.jpg" alt="Certyfikat">
+                </div>
+            </div>
+            <div class="gallery__scroll__item">
+                <div class="gallery__scroll__item__img">
+                    <img src="./assets/93.jpg" alt="Certyfikat">
+                </div>
             </div>
         </div>
-        <a href="">
+        <a href="./pages/galeria.html">
             <button class="shadow">
                 <p>Galeria</p>
             </button>
         </a>
     </section>
 
-    <section class="opening-hours shadow">
-        <h2>Godziny otwarcia</h2>
-        <div class="opening-hours__list1">
-            <div class="opening-hours__list">
-                <div class="days">
-                    <ul>
-                        <li>Poniedziałek</li>
-                        <li>Wtorek</li>
-                        <li>Środa</li>
-                        <li>Czwartek</li>
-                        <li>Piątek</li>
-                        <li>Sobota</li>
-                        <li>Niedziela</li>
-                    </ul>
+    <section class="">
+        <div class="opening-hours-contact background shadow">
+            <div class="opening-hours">
+                <h2>Godziny otwarcia</h2>
+                <div class="opening-hours__list1">
+                    <div class="opening-hours__list">
+                        <div class="days">
+                            <ul>
+                                <li>Poniedziałek</li>
+                                <li>Wtorek</li>
+                                <li>Środa</li>
+                                <li>Czwartek</li>
+                                <li>Piątek</li>
+                                <li>Sobota</li>
+                                <li>Niedziela</li>
+                            </ul>
+                        </div>
+                        <div class="hours">
+                            <ul>
+                                <li>8:30 - 16:30</li>
+                                <li>11:00 - 19:00</li>
+                                <li>8:30 - 16:30</li>
+                                <li>8:00 - 16:30</li>
+                                <li>11:00 - 19:00</li>
+                                <li>8:00 - 12:00</li>
+                                <li>Nieczynne :(</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="hours">
-                    <ul>
-                        <li>8:30 - 16:30</li>
-                        <li>11:00 - 19:00</li>
-                        <li>8:30 - 16:30</li>
-                        <li>8:00 - 16:30</li>
-                        <li>11:00 - 19:00</li>
-                        <li>8:00 - 12:00</li>
-                        <li>Nieczynne :(</li>
-                    </ul>
-                </div>
+            </div> 
+            <div class="op-contact">
+                <p class="f18">Umów się na wizytę: <b>+48 533 445 455</b></p>
+                <p>Umawianie wizyt telefonicznie <br>lub osobiście w salonie</p>
             </div>
         </div>
     </section>
@@ -260,8 +314,8 @@
     </section>
 
     <footer>
-        <div class="footer container">
-            <div class="footer__img">
+        <div class="footer-mobile container">
+            <div class="footer__img container">
                 <img src="./assets/Glamour_black.svg" alt="logo">
             </div>
             <div class="salon">
@@ -281,6 +335,60 @@
                 <p>asia.mokicka@wp.pl</p>
             </div>
         </div>
+
+        <div class="footer-desktop container">
+            <div class="footer-desktop__left">
+                <div>
+                    <div class="salon-desktop">
+                        <img src="./assets/8.png" alt="Nożyczki">
+                        <p>Salon Fryzjerski <i>"Glamour"</i> <br>Joanna Mokicka</p>
+                    </div>
+                    <div class="salon-desktop">
+                        <img src="./assets/10.png" alt="Dom">
+                        <p>Dobrzyniewo Duże <br>ul. Kościelna 19</p>
+                    </div>
+                    <div class="salon-desktop">
+                        <img src="./assets/11.png" alt="Telefon">
+                        <p>533 445 455</p>
+                    </div>
+                    <div class="salon-desktop">
+                        <img src="./assets/9.png" alt="poczta">
+                        <p>asia.mokicka@wp.pl</p>
+                    </div>
+                </div>
+                </div>
+            <div class="footer-desktop__baner">
+                <img src="./assets/Glamour_black.svg" alt="">
+            </div>
+            <div class="footer-desktop__right">
+                <img src="./assets/12.png" alt="Zegar">
+                <div class="footer-desktop__right__open-hours">
+                    <div class="days">
+                        <ul>
+                            <li>Poniedziałek</li>
+                            <li>Wtorek</li>
+                            <li>Środa</li>
+                            <li>Czwartek</li>
+                            <li>Piątek</li>
+                            <li>Sobota</li>
+                            <li>Niedziela</li>
+                        </ul>
+                    </div>
+                    <div class="hours">
+                        <ul>
+                            <li>8:30 - 16:30</li>
+                            <li>11:00 - 19:00</li>
+                            <li>8:30 - 16:30</li>
+                            <li>8:00 - 16:30</li>
+                            <li>11:00 - 19:00</li>
+                            <li>8:00 - 12:00</li>
+                            <li>Nieczynne :(</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
+<script src="./js/script.js"></script>
 </html>
